@@ -11,15 +11,15 @@ steps:
     then
         dotnet build extensions.csproj --output ./bin
     fi
-    
     python3.7 -m venv worker_venv
     source worker_venv/bin/activate
     pip3.7 install setuptools
-    pip3.7 install -r CH16.functions/requirements.txt
+    pip3.7 install -r requirements.txt
+      workingDirectory: CH16.functions
 - task: ArchiveFiles@2
   displayName: "Archive files"
   inputs:
-    rootFolderOrFile: "$(System.DefaultWorkingDirectory)/worker_venv"
+    rootFolderOrFile: "$(System.DefaultWorkingDirectory)/CH16.functions"
     includeRootFolder: false
     archiveFile: "$(System.DefaultWorkingDirectory)/build$(Build.BuildId).zip"
 - task: PublishBuildArtifacts@1
