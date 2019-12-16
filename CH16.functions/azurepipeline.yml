@@ -11,10 +11,11 @@ steps:
     then
         dotnet build extensions.csproj --output ./bin
     fi
-    pip install --upgrade pip
+    
     python3.7 -m venv worker_venv
     source worker_venv/bin/activate
     pip3.7 install setuptools
+    pip3.7 install -r .\CH16.functions\requirements.txt
 - task: ArchiveFiles@2
   displayName: "Archive files"
   inputs:
