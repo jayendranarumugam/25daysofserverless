@@ -2,7 +2,7 @@ pool:
       vmImage: ubuntu-16.04
 steps:
 - task: UsePythonVersion@0
-  displayName: "Setting python version to 3.7 as required by functions"
+  displayName: "Setting python version to 3.7 as required by function App"
   inputs:
     versionSpec: '3.7'
     architecture: 'x64'
