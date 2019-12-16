@@ -1,6 +1,0 @@
-{
-    "azureFunctions.deploySubpath": "computervisionCH15.functions/target/azure-functions/computervisionch15.functions-20191215182718022/",
-    "azureFunctions.projectLanguage": "Java",
-    "azureFunctions.projectRuntime": "~2",
-    "debug.internalConsoleOptions": "neverOpen"
-}
