@@ -15,7 +15,6 @@ steps:
     python3.7 -m venv worker_venv
     source worker_venv/bin/activate
     pip3.7 install setuptools
-    pip3.7 install -r requirements.txt
 - task: ArchiveFiles@2
   displayName: "Archive files"
   inputs:
