@@ -3,5 +3,6 @@
     "azureFunctions.scmDoBuildDuringDeployment": true,
     "azureFunctions.projectLanguage": "Python",
     "azureFunctions.projectRuntime": "~2",
-    "debug.internalConsoleOptions": "neverOpen"
+    "debug.internalConsoleOptions": "neverOpen",
+    "python.pythonPath": "C:\\Users\\Jay\\Anaconda3\\python.exe"
 }

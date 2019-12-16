@@ -8,6 +8,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
    
     with open('./location.json') as f:
-        jsondata = json.load(f)
+        data = json.load(f)
+        jsondata=json.dumps(data)
 
     return func.HttpResponse(jsondata,mimetype="application/json")   
