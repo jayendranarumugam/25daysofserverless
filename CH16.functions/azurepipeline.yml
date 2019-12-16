@@ -2,9 +2,9 @@ pool:
       vmImage: ubuntu-16.04
 steps:
 - task: UsePythonVersion@0
-  displayName: "Setting python version to 3.6 as required by functions"
+  displayName: "Setting python version to 3.7 as required by functions"
   inputs:
-    versionSpec: '3.6'
+    versionSpec: '3.7'
     architecture: 'x64'
 - bash: |
     if [ -f extensions.csproj ]
@@ -12,10 +12,10 @@ steps:
         dotnet build extensions.csproj --output ./bin
     fi
     pip install --upgrade pip
-    python3.6 -m venv worker_venv
+    python3.7 -m venv worker_venv
     source worker_venv/bin/activate
-    pip3.6 install setuptools
-    pip3.6 install -r requirements.txt
+    pip3.7 install setuptools
+    pip3.7 install -r requirements.txt
 - task: ArchiveFiles@2
   displayName: "Archive files"
   inputs:
