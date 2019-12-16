@@ -11,6 +11,7 @@ steps:
     then
         dotnet build extensions.csproj --output ./bin
     fi
+    pip install --upgrade pip
     python3.6 -m venv worker_venv
     source worker_venv/bin/activate
     pip3.6 install setuptools
