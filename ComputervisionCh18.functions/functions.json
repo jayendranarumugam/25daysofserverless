@@ -1,0 +1,12 @@
+{
+    "disabled": false,
+    "bindings": [
+        {
+            "name": "content",
+            "type": "blobTrigger",
+            "direction": "in",
+            "path": "ch18/{name}",
+            "connection":"AzureWebJobsStorage"
+        }
+    ]
+}
