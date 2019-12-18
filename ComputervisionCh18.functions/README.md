@@ -1,10 +1,28 @@
-## Challenge 15
+## Challenge 18
 
-https://25daysofserverless.com/calendar/15
+https://25daysofserverless.com/calendar/18
 
-## Testing URL
+## Deloyed
 
-Azure Functions URL:https://computervisionch15.azurewebsites.net/API/ImgAnalysis
+Azure Functions URL: https://computervisionch18.azurewebsites.net
+
+### Created ComputerVision from Azure Portal
 
 
-https://computervisionch15.azurewebsites.net/api/ImgAnalysis?imgurl=https://user-images.githubusercontent.com/34439033/35520552-27cf73c2-0539-11e8-8e86-ffddc0ec2702.png
+![](./Img/1.JPG)
+
+
+
+###  Upload Image Blob in the Storage account from Azure Portal
+
+![](https://user-images.githubusercontent.com/13558917/70572373-88876980-1b54-11ea-8cd5-af07306b6d19.jpg)
+
+
+![](./Img/2.JPG)
+
+
+###  Azure Functions Triggerd to analyse the Image(blob) using the Blob Trigger
+
+![](./Img/3.JPG)
+
+

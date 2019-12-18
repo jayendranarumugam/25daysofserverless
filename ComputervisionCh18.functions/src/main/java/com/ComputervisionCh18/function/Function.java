@@ -9,7 +9,7 @@ import com.microsoft.azure.cognitiveservices.vision.computervision.ComputerVisio
 import com.microsoft.azure.cognitiveservices.vision.computervision.models.*;
 
 /**
- * Azure Functions with HTTP Trigger.
+ * Azure Functions with Blob Trigger.
  */
 public class Function {
     /**
@@ -21,7 +21,7 @@ public class Function {
      * function deployed to Azure. More details:
      * https://aka.ms/functions_authorization_keys
      */
-    @FunctionName("BlobTrigger")
+    @FunctionName("CH18BlobTrigger")
     @StorageAccount("AzureWebJobsStorage")
     public void blobTrigger(
             @BlobTrigger(name = "content", path = "ch18/{fileName}", dataType = "binary", connection = "AzureWebJobsStorage") byte[] content,
