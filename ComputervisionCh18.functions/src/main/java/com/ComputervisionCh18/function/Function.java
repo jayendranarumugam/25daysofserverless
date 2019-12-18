@@ -62,7 +62,7 @@ public class Function {
         // featuresToExtractFromLocalImage.add(VisualFeatureTypes.IMAGE_TYPE);
         // </snippet_analyzelocal_features>
 
-        context.getLogger().info("\nAnalyzing local image ...");
+        context.getLogger().info("\nAnalyzing image ...");
 
         try {
             // <snippet_analyzelocal_analyze>
@@ -97,8 +97,15 @@ public class Function {
             context.getLogger().info("Tags are:");
             for (ImageTag tag : analysis.tags()) {
                 imageResultModel.Tags.add(tag.name());
-                context.getLogger().info(tag.name());
+                
             }
+
+            if(imageResultModel.Tags.contains("gift wrapping")){
+                context.getLogger().info("Gift Wrapped properly");
+            }else{
+                context.getLogger().info("Gift was not Wrapped properly. Please check the gift again !!");
+            }
+
             // </snippet_analyzelocal_tags>
 
             // <snippet_analyzelocal_faces>
